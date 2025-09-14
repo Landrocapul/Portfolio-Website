@@ -454,6 +454,22 @@ button:hover {
     font-size: 1rem;
     border-radius: .5rem; 
   }
+
+.quote{
+  text-align: center;
+  padding: 5vw;
+  font-size: 1.7rem; 
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
   .aboutme {
     flex-direction: column;
     text-align: center;
