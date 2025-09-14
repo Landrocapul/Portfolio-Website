@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="nav-header">
         <nav class="navbar" id="navbar">
             <div class="logo">
                 <a href="#"><img src="images/LandroLogo2.png" class="logo1" /></a>
@@ -62,7 +62,7 @@
 
         <div class="about-text">EVERY TASK,</div>
         <div class="about-text2">EVERY ASK,</div>
-        <div class="about-text2">UNVEILS THE MASK</div>
+        <div class="about-text3">UNVEILS THE MASK</div>
 
         
        
@@ -221,14 +221,46 @@
             // Update the last scroll position to the current position
             lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
         };
+    
 
 
     
-    window.addEventListener('scroll', () => {
-      document.body.style.setProperty('--scrollY', window.scrollY + "px");
-    });
+    const texts = document.querySelectorAll('.about-text, .about-text2');
 
+        texts.forEach(el => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                // apply variable only to this element
+                el.style.setProperty('--scrollY', "0%");
+                } else {
+                el.style.setProperty('--scrollY', "100%");
+                }
+            });
+            },
+            { threshold: 1 } // 20% visible
+        );
+
+        observer.observe(el);
+        });
+
+  
     
+
+    const text = document.querySelector('.about-text3');
+
+        window.addEventListener('scroll', () => {
+            const textTop = text.getBoundingClientRect().top;
+            const triggerBottom = window.innerHeight * 0.8;
+            const triggerTop = window.innerHeight * 0.2;
+
+            if (textTop < triggerBottom && textTop > triggerTop) {
+            text.classList.add('show');   // fade in when visible
+            } else {
+            text.classList.remove('show'); // fade out when out of view
+            }
+        });
             
 
 </script>
