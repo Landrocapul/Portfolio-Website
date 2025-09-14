@@ -1,10 +1,11 @@
 html {
-  font-size: 16px;         /* root font size */
-  scroll-behavior: smooth; /* smooth scroll */
+  font-size: 16px;         
+  scroll-behavior: smooth; 
 }
 
 * {
   margin: 0;
+  
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
@@ -12,6 +13,14 @@ html {
 }
 
 
+.nav-header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 42;
+    background: transparent;
+    
+}
 .navbar {
   
   
@@ -19,13 +28,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;                   /* rem for consistent spacing */
+  padding: 1rem;                  
   position: fixed;
   width: 100vw;
   top: 0;     
   transition: background-color 0.3s; 
   z-index: 1000;
-  height: 9vh;                     /* vh for screen-based height */
+  height: 9vh;                     
 }
 
 .scrolled {
@@ -36,13 +45,13 @@ html {
   list-style-type: none;   
   display: flex;    
   gap: 1.25rem;
-  margin-right: 5rem;
-                 /* rem spacing instead of px */
+  margin-right: 3vw;
+                
 }
 
 .navbar li a {
   text-decoration: none;
-  font-size: 1.5rem;          /* rem for text */
+  font-size: 1.5rem;          
   color: #fff;         
   padding: 0.5rem 1rem; 
   border-radius: 0.5rem;     
@@ -55,34 +64,6 @@ html {
   color: #000;
 }
 
-.burger {
-  display: none;
-  font-size: 1.5rem;   /* rem for icon size */
-  cursor: pointer;
-}
-
-#sidebar {
-  position: fixed;
-  top: 0;
-  right: -15rem;       /* rem instead of px */
-  width: 12rem;
-  height: 100%;
-  background: #cb2121; 
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 1.5rem;
-  transition: right 0.3s ease;
-}
-
-#sidebar a {
-  color: white;
-  padding: 1rem 0;
-  text-decoration: none;
-}
-
-#sidebar.active {
-  right: 0;
-}
 
 .logo1 {
   height: 3rem;        
@@ -243,9 +224,11 @@ button:hover {
 
 .projectcards {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 1.25rem;
-  padding: 1.25rem;    
+  padding: 1.25rem; 
+  margin-left: 20vw;  
+  margin-right: 20vw;  
 }
 
 .card {
@@ -414,6 +397,37 @@ button:hover {
 }
 
 
+.burger {
+  display: none;
+  font-size: 1.5rem;   /* rem for icon size */
+  cursor: pointer;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: -15rem;       /* rem instead of px */
+  width: 12rem;
+  height: 100%;
+  background: #cb2121; 
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 40;
+}
+
+#sidebar a {
+  color: white;
+  padding: 1rem 0;
+  text-decoration: none;
+  z-index: 40;
+}
+
+#sidebar.active {
+  right: 0;
+}
+
 @media (max-width: 760px) {
   .navbar {
     height: 5vh;
@@ -429,6 +443,10 @@ button:hover {
     color: #fff;
   }
   .intro {
+  background-image: url(images/bg1.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   
   height: 40vh;        
   width: 100%;
