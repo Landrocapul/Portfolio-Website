@@ -24,7 +24,7 @@ html {
 .navbar {
   
   
-  background-color: #cb2121; 
+  background-color: #cb21216e; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,10 +71,7 @@ html {
 }
 
 .intro {
-  background-image: url(images/bg1.jpeg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to left, #434343 0%, black 100%);
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -107,17 +104,12 @@ html {
 .hi {
   color: #ffffff;
   font-size: 7rem;  /* ~60px */
-  text-shadow: 0.5rem 0.5rem 1.25rem rgba(0, 0, 0, 0.5);
   font-weight: 900;
 }
 .name{
   color:  #cb2121; ; 
   -webkit-text-stroke: 0.15vw rgb(255, 255, 255);
-  background: linear-gradient(to right, #cb2121    40%,#ffffff  );  
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-position: calc(1 * var(--scrollY, 0px)) 0;
+  
 }
 
 .web {
