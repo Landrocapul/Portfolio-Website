@@ -230,25 +230,20 @@ button:hover {
   flex-direction: column;
   gap: 1.25rem;
   padding: 1.25rem; 
-  margin-left: 20vw;  
-  margin-right: 20vw;  
 }
 
 .card {
   background: white;
   border-radius: 1rem;
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-  min-width: 22rem;
+  
   overflow: hidden;
 }
 
 .card img {
-  width: 100%;
-  min-width: 22rem;
-  height: 17.5rem;
   object-fit: cover;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  width: 100%;
+  height: 17.5rem;
 }
 
 .card-content {
@@ -299,12 +294,12 @@ button:hover {
 .contact-section {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   padding: 2.5rem;
 }
 
 .faq {
   flex: 1;
-  min-width: 15rem;
   background: #cb2121;  
   color: white;
   padding: 1.25rem;
@@ -434,6 +429,7 @@ button:hover {
 @media (max-width: 768px) {
   .navbar {
     height: 5vh;
+    width: 5vw;
   }
   .navbar ul {
     display: none;
@@ -463,7 +459,6 @@ button:hover {
     
     height: 120vw;
     width: 100vw;
-    margin-right: -10vw;
 
     
   
@@ -530,11 +525,9 @@ button:hover {
     text-align: center;
   }
   .project-section {
-    padding: 2rem 1rem;
     text-align: center;
-  }
-  .textproject {
-    margin: 0 10%;
+    flex-direction: column;
+    align-items: center;
   }
   .textproject h1 {
     font-size: 6vw;
@@ -544,12 +537,12 @@ button:hover {
     line-height: 1.4;
   }
   .projectcards {
+    width: 100vw;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
   }
   .card {
-    width: 90%;
     max-width: 22rem;
   }
   .contact-section {
