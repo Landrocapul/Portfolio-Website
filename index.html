@@ -122,10 +122,55 @@ When I’m not coding or designing, I explore new tools, build
                 
         </div>
 
+        <div class="logos">
+            <h1 class="textproject">MY EXPERTICE </h1>
+<div class="logo_items">
+<img src="logos/android.png">
+<img src="logos/androidstudio.png">
+<img src="logos/c++.png">
+<img src="logos/eclipse.png">
+<img src="logos/java.png">
+<img src="logos/javascript.png">
+<img src="logos/mysql.png">
+<img src="logos/php.png">
+<img src="logos/vs.png">
+<img src="logos/android.png">
+<img src="logos/androidstudio.png">
+<img src="logos/c++.png">
+<img src="logos/eclipse.png">
+<img src="logos/java.png">
+<img src="logos/javascript.png">
+<img src="logos/mysql.png">
+<img src="logos/php.png">
+<img src="logos/vs.png">
+
+</div>
+  <div class="logo_items">
+<img src="logos/android.png">
+<img src="logos/androidstudio.png">
+<img src="logos/c++.png">
+<img src="logos/eclipse.png">
+<img src="logos/java.png">
+<img src="logos/javascript.png">
+<img src="logos/mysql.png">
+<img src="logos/php.png">
+<img src="logos/vs.png">
+<img src="logos/android.png">
+<img src="logos/androidstudio.png">
+<img src="logos/c++.png">
+<img src="logos/eclipse.png">
+<img src="logos/java.png">
+<img src="logos/javascript.png">
+<img src="logos/mysql.png">
+<img src="logos/php.png">
+<img src="logos/vs.png">
+</div>
+</div>
+
     </section>
     <section id="projects" class="project-section">
             <div class="textproject">
-                <h1> Check out my recent work </h1>
+                <h1>CHECK OUT MY RECENT WORK </h1>
                 <h6>I’ve worked on a variety of projects, from 
                     simple websites to complex web applications. 
                     Here are a few of my favorites.</h6>
@@ -212,7 +257,7 @@ When I’m not coding or designing, I explore new tools, build
         </form>
         </div>
     </section>
-
+    <footer class="footer">
     <div class="contact-info">
         <div class="info-box">
         <h3>FB PAGE</h3>
@@ -227,6 +272,7 @@ When I’m not coding or designing, I explore new tools, build
         <p>Ecoland Drive, Davao City, Philippines</p>
         </div>
     </div>
+    </footer>
 <script>
     
     let lastScrollTop = 0; // Variable to hold the last scroll position
@@ -291,8 +337,44 @@ When I’m not coding or designing, I explore new tools, build
             text.classList.remove('show'); // fade out when out of view
             }
         });
+    const text2 = document.querySelector('.textproject h1');
+
+        window.addEventListener('scroll', () => {
+            const textTop = text2.getBoundingClientRect().top;
+            const triggerBottom = window.innerHeight * 0.8;
+            const triggerTop = window.innerHeight * 0.1;
+
+            if (textTop < triggerBottom && textTop > triggerTop) {
+            text2.classList.add('show');   // fade in when visible
+            } else {
+            text2.classList.remove('show'); // fade out when out of view
+            }
+        });
+
+
+
+    
             
 
+</script>
+<script>
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+  const triggerHeight = window.innerHeight * 0.6;
+
+  cards.forEach((card, index) => {
+    const rect = card.getBoundingClientRect();
+
+    if (rect.top < triggerHeight) {
+      card.style.transform = "scale(1)";
+      card.style.zIndex = 10 + index;
+    } else {
+      card.style.transform = "scale(0.6)";
+      card.style.zIndex = index;
+    }
+  });
+});
 </script>
 
 </body>

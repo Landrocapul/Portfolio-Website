@@ -1,46 +1,87 @@
 .project-section {
-    background-color: #252525;
+    background-color: #cb2121;
+    padding: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
 
 .textproject {
   text-align: center;
-  margin: 3rem 5%;
-  font-size: 2rem;
+  padding-bottom: 1vw;
+  font-size: 10em; 
+  font-weight: 800;
+}
+.textproject h1{
+    
+    font-weight: 900;
+    color: #ffffff;
+    padding-left: 1vw;
+    padding-top: 2vw;
+    font-size: 7rem;
+    letter-spacing: 2px;
+    opacity:0;              
+    transform: translateY(30px); 
+    transition: all 2s ease-out;
+}
+.textproject h6{
+    color: #252525;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 15vw ;
+    padding-left: 15vw ;
+    font-size: 1.5rem;
+}
+.textproject h1.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
 
 .projectcards {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  padding: 1.25rem; 
+  position: relative;
+  height: 300vh; /* enough scroll space for 3 cards */
 }
 
 .card {
+
+  position: sticky;
+  top: 10vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
   background: white;
   border-radius: 1rem;
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-  
   overflow: hidden;
+  transform: scale(0.9);
+  transition: transform 0.3s ease-out;
+  z-index: 0;
 }
 
 .card img {
+padding: 2vw;
+padding-bottom: 1vw;
   object-fit: cover;
-  width: 100%;
-  height: 17.5rem;
+  width: auto;
+  height: 40vh;
 }
 
 .card-content {
-  padding: 1rem;
+  padding-left:  4vw;
+  padding-right:  4vw;
+  padding-bottom: 3vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .card h3 {
-  margin: 0.6rem 0;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
 }
-
 .card p {
   color: #555;
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -54,7 +95,7 @@
   color: #333;
   padding: 0.3em 0.6em;
   border-radius: 0.6rem;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   margin: 0.3rem;
 }
 
@@ -65,7 +106,7 @@
   padding: 0.6em 1.2em;
   border-radius: 0.6rem;
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   margin-top: 0.6rem;
 }
 
