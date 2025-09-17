@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="icon" type="image/png"  href="images/LC.png">
     <title>Code. Learn. Create.</title>
 </head>
@@ -73,22 +77,47 @@
        
 
         <div class="aboutme">  
-                <div class="profilepic2">
-                    <a href=""><img src="images/Profile.png"  class="propic2"/></a>
+                <div class="colorpic">
+                    
+                    <a href=""><img src="images/meabout.png"  class="colorme"/></a>
+                </div> 
+                <div class="job">
+                    <div class="job1">
+                        <a href=""><img src="images/makinglogo.png"  class="makelogo"/></a>
+                    
+                    </div> 
+                    <div class="job2">
+                    
+                        <a href=""><img src="images/jersey.png"  class="jersey"/></a>
+                    </div> 
                 </div> 
                 <div class="aboutmetext">
-                <h2 >
-                    Web Developer
-                </h2>
-                <br>
+                    <h2 >
+                        <br><br>
+                        ABOUT ME 
+                    </h2>
+                    <br>
 
-                <p>
-                    I am a passionate Web Development student who enjoys turning 
-                    ideas into functional and visually appealing websites. I’m 
-                    currently learning HTML, CSS, JavaScript, and PHP to build 
-                    modern and responsive web applications.
-                    
-                </p>
+<p>
+Nice that you have found me. I am a student of Information 
+Technology, focusing on web and mobile development with 
+knowledge in PHP, JavaScript, Java, C++, and Android development.
+<br><br>
+I began as the editor of our school’s ICT Club and later 
+joined our family sublimation business as a layout artist, 
+designing logos, jerseys, and t-shirts. These roles helped 
+me connect creativity with technology.
+<br><br>
+I also have experience in video editing and skills in 
+Photoshop, CorelDRAW, and Illustrator, which I use for 
+logo and apparel design. Alongside my studies, I work on 
+freelance projects to sharpen my craft and gain real-world 
+experience.
+<br><br>
+When I’m not coding or designing, I explore new tools, build
+ personal projects, and spend time with family and friends.
+                      
+</p>
                 </div>
                 
         </div>
@@ -253,7 +282,7 @@
 
         window.addEventListener('scroll', () => {
             const textTop = text.getBoundingClientRect().top;
-            const triggerBottom = window.innerHeight * 0.8;
+            const triggerBottom = window.innerHeight * 0.6;
             const triggerTop = window.innerHeight * 0.2;
 
             if (textTop < triggerBottom && textTop > triggerTop) {

@@ -1,0 +1,98 @@
+.project-section {
+    background-color: #252525;
+  }
+
+.textproject {
+  text-align: center;
+  margin: 3rem 5%;
+  font-size: 2rem;
+}
+
+.projectcards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem; 
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  
+  overflow: hidden;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 17.5rem;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card h3 {
+  margin: 0.6rem 0;
+  font-size: 1.25rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.tags {
+  margin: 1rem 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #333;
+  padding: 0.3em 0.6em;
+  border-radius: 0.6rem;
+  font-size: 0.8rem;
+  margin: 0.3rem;
+}
+
+.button {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 0.6em 1.2em;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin-top: 0.6rem;
+}
+
+.button:hover {
+  background: #333;
+}
+
+@media (max-width: 768px) {
+  .project-section {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textproject h1 {
+    font-size: 6vw;
+  }
+  .textproject h6 {
+    font-size: 3.5vw;
+    line-height: 1.4;
+  }
+  .projectcards {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .card {
+    max-width: 22rem;
+  }
+}

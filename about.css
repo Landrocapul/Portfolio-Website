@@ -1,0 +1,176 @@
+
+
+.about{
+    padding-bottom: 10vw;
+  
+  background-color: #cb2121;  
+}
+.quote{
+  text-align: left;
+  padding-left: 10vw;
+  padding-top: 20vw;
+  padding-bottom: 20vw;
+  font-size: 10em; 
+  font-weight: 800;
+}
+.about-text,
+.about-text2 {
+  line-height: 13vw;
+  background: linear-gradient(to right, #ffffff 50%, #252525 50%);
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 4s ease; /* smooth change */
+  background-position: var(--scrollY, 0%) 0; 
+}
+
+
+.about-text3{
+  color: #252525;
+    padding-left: 1vw;
+    padding-top: 2vw;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    opacity: 0;              
+    transform: translateY(30px); 
+    transition: all 1s ease-out;
+}
+ .about-text3.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+
+
+.abouttitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+
+
+
+
+
+.aboutme {
+    padding: 5vw;
+    padding-bottom: 5vw;
+    font-size: 1.125rem;
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: row;
+}
+.colorpic{
+    background-color: #eebd27;
+    background-image: url(images/meabout.png);
+    background-position: 2% 40%;
+    background-size: 35% auto;   
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    margin-right: 2vw;
+}
+
+.colorme {
+    opacity: 0;
+    width: 25vw;
+}
+.job{
+    display: flex;
+    flex-direction: column;
+}
+.job1{
+    background-color: #eebd27;
+    background-image: url(images/makinglogo.png);
+    background-position: 38% 280%;
+    background-size: 53% auto;   
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+
+}
+.makelogo {
+    
+    opacity: 0;
+    height: 37.5vh;
+    width: 25vw;
+
+}
+.job2{
+    background-color: #eebd27;
+    background-image: url(images/jersey.png);
+    background-position: 42% -1400%;
+    background-size: 34% auto;   
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    margin-right: 2vw;
+    
+
+}
+
+.jersey {
+    
+    opacity: 0;
+    height: 37vh;   
+    width: 25vw;
+
+}
+
+.aboutmetext h2{
+       text-align: justify;
+    font-family: "Roboto", Sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2.5px;
+    color: #F2F2F2;
+}
+
+.aboutmetext {
+       text-align: justify;
+    font-family: "Roboto", Sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 2.5px;
+    color: #F2F2F2;
+}
+
+
+@media (max-width: 768px) {
+
+.quote{
+  
+  
+  text-align: center;
+  padding: 5vw;
+  font-size: 5rem; 
+  font-weight: 800;
+}
+
+.about-text{
+  line-height: 10vh;
+  padding-top: 10vh;
+}
+.about-text2{
+  line-height: 10vh;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+}
+
+.about-text3{
+  font-size: .5em;
+  padding-bottom: 10vh;
+}
+
+  .aboutme {
+    flex-direction: column;
+    text-align: center;
+  }
+}
