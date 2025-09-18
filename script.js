@@ -103,18 +103,21 @@ window.addEventListener('scroll', () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const aboutSection = document.querySelector(".about");
-  const projectSection = document.querySelector(".project-section");
+  const projectSection = document.querySelector(".project-section"); 
+  const contactSection = document.querySelector(".contact-section");
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         // When projects section is visible -> change about section bg
-        aboutSection.style.backgroundColor = "#131313ff";
-        projectSection.style.backgroundColor = "#131313ff";
+        aboutSection.style.backgroundColor = "#252525";
+        projectSection.style.backgroundColor = "#252525";
+        contactSection.style.backgroundColor = "#252525";
       } else {
         // When projects not visible -> back to red
         aboutSection.style.backgroundColor = "#cb2121";
         projectSection.style.backgroundColor = "#cb2121";
+        contactSection.style.backgroundColor = "#cb2121";
       }
     });
   }, { threshold: 0.2 });

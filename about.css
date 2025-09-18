@@ -1,9 +1,10 @@
 
 
-.about{
+.about-section{
     padding-bottom: 10vw;
   transition: background-color 1s ease;
   background-color: #cb2121;  
+  
 }
 .quote{
   text-align: left;
@@ -64,7 +65,7 @@
     flex-direction: row;
 }
 .colorpic{
-    background-color: #eebd27;
+    background-color: #000000;
     background-image: url(images/meabout.png);
     background-position: 2% 40%;
     background-size: 35% auto;   
@@ -83,7 +84,7 @@
     flex-direction: column;
 }
 .job1{
-    background-color: #eebd27;
+    background-color: #ffffff;
     background-image: url(images/makinglogo.png);
     background-position: 38% 280%;
     background-size: 53% auto;   
@@ -204,6 +205,7 @@
 }
 
 @media (max-width: 768px) {
+ 
 
 .quote{
   
@@ -232,5 +234,67 @@
   .aboutme {
     flex-direction: column;
     text-align: center;
+
   }
+.colorpic{
+  border-radius: 4vw;
+  margin-bottom: 2vw;
+
+  background-position: 50% 40%;
+  background-size: 115% auto;
+
+}
+.colorme{
+  height: 80vw;
+
+
+}
+.job{
+  flex-direction: row;
+  
+}
+.job1{
+width: 45vw;
+height: 45vw;
+border-radius: 4vw;
+margin-right: 2vw;
+
+  background-position: 230% 40%;
+  background-size: 115% auto;
+
+
+}
+.job2{
+width: 45vw;
+height: 45vw;
+border-radius: 4vw;
+
+  background-position: 89% 90%;
+  background-size: 70% auto;
+
+}
+
+
+
+
+
+.aboutmetext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  
+  padding-bottom: 10vh;
+  font-size: .8rem;
+  line-height: 4vw;
+}
+.aboutmetext p{
+  padding-bottom: 10vh;
+}
+
+.logos {
+  margin-top: 35vh;
+}
+
+
 }

@@ -9,6 +9,11 @@
   padding-top: 20vw;
 }
 
+@keyframes pulseShadow {
+  0%   { filter: drop-shadow(0px 0px -15px #cb2121); }
+  50%  { filter: drop-shadow(0px 0px 15px #cb2121); }
+  100% { filter: drop-shadow(0px 0px -15px #cb2121); }
+}
 .propic {
   height: 100vh;
   width: 100vh;
@@ -17,6 +22,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  animation: pulseShadow 10s infinite;
 }
 
 .intro-text {
@@ -90,7 +96,8 @@ button:hover {
   
   .hi {
   
-  font-size: 3rem; 
+  font-size: 4rem;
+  line-height: 15vw; 
   
   }
 

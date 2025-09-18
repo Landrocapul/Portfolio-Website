@@ -1,10 +1,9 @@
 .project-section {
-    padding: 10vw;
-    padding-left: 15vw;
-    padding-right: 15vw;
     
     transition: background-color 1s ease;
     background-color: #cb2121;
+    padding-top: 15vw;
+    padding-bottom: 10vw;
   }
 .textproject {
   text-align: center;
@@ -16,7 +15,6 @@
     
     font-weight: 900;
     color: #ffffff;
-    padding-left: 1vw;
     padding-top: 2vw;
     font-size: 7rem;
     letter-spacing: 2px;
@@ -39,8 +37,12 @@
 }
 
 .projectcards {
-  position: relative;
-  height: 300vh; /* enough scroll space for 3 cards */
+  
+    padding-right: 15vw ;
+    padding-left: 15vw ;
+  display: flex;
+  flex-direction: column;
+  height: 300vh; 
 }
 
 .card {
@@ -125,16 +127,55 @@ padding-bottom: 1vw;
     font-size: 6vw;
   }
   .textproject h6 {
-    font-size: 3.5vw;
+    font-size: 2.1vw;
     line-height: 1.4;
+    
+    padding-bottom: 5vw;
   }
   .projectcards {
+    
+    padding-right: 1vw ;
+    padding-left: 1vw ;
     width: 100vw;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
   }
   .card {
-    max-width: 22rem;
+    box-shadow: #ffffff;
+    max-width: 85vw;
+    
+    
   }
+  .card img{
+    border-radius: 5vw;
+    height: 50vh;
+
+
+  }
+
+  .card-content h3{
+    font-size: 2rem;
+  }
+   .card-content p{
+    font-size: 1rem;
+  }
+   .tags{
+    font-size: .6rem;
+    padding-right: 1vw ;
+    padding-left: 1vw ;
+  }
+   .tag{
+    font-size: .6rem;
+  }
+  .button{
+    font-size: 1rem;
+
+
+  }
+
+
+
+
+
 }
