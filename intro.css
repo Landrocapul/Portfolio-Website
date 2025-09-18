@@ -106,10 +106,15 @@
   font-weight: 900;
   line-height:10vw
 }
-.name{
-  color:  #cb2121; 
+.name {
   -webkit-text-stroke: 0.15vw rgb(255, 255, 255);
-  
+  animation: colorChange 10s infinite alternate;
+}
+
+@keyframes colorChange {
+  0%   { color: #ffffff; }
+  50%  { color: #cb2121; }
+  100% { color: #252525;; }
 }
 
 .web {
@@ -143,6 +148,9 @@ button:hover {
   @keyframes shoot {
   0%   { transform: translateX(0) translateY(0) rotate(220deg); opacity: 1; }
   100% { transform: translateX(120vw) translateY(50vh) rotate(220deg); opacity: 0; }
+}
+.name {
+  -webkit-text-stroke: 0.3vw rgb(255, 255, 255);
 }
   
   .intro {
