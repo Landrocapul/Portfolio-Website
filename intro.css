@@ -140,6 +140,10 @@ button:hover {
 
 
 @media (max-width: 768px) {
+  @keyframes shoot {
+  0%   { transform: translateX(0) translateY(0) rotate(220deg); opacity: 1; }
+  100% { transform: translateX(120vw) translateY(50vh) rotate(220deg); opacity: 0; }
+}
   
   .intro {
     height: 100vh;        
@@ -153,7 +157,8 @@ button:hover {
 
   .propic {
     
-    height: 120vw;
+    
+    height: 153vw;
     width: 100vw;
 
   }
@@ -161,7 +166,7 @@ button:hover {
   .hi {
   
   font-size: 4rem;
-  line-height: 15vw; 
+  line-height: 4rem; 
   
   }
 

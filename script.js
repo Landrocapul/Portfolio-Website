@@ -4,6 +4,16 @@
     
 
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.querySelector(".burger");
+    const sidebar = document.getElementById("sidebar");
+
+    burger.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+    });
+  });
+
+
     
     const texts = document.querySelectorAll('.about-text, .about-text2');
 
