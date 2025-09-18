@@ -1,27 +1,6 @@
 
     
-    let lastScrollTop = 0; // Variable to hold the last scroll position
-
-        function toggleMenu() {
-            document.getElementById("sidebar").classList.toggle("active");
-        }
-
-        window.onscroll = function() {
-            const navbar = document.getElementById("navbar");
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-            // Check if the user is scrolling down or up
-            if (currentScroll > lastScrollTop && currentScroll > 50) {
-                // User is scrolling down and has scrolled more than 50 pixels
-                navbar.classList.remove("scrolled"); // Hide the navbar
-            } else {
-                // User is scrolling up
-                navbar.classList.add("scrolled"); // Show the navbar
-            }
-
-            // Update the last scroll position to the current position
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-        };
+    
     
 
 
@@ -102,7 +81,7 @@ window.addEventListener('scroll', () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const aboutSection = document.querySelector(".about");
+  const aboutSection = document.querySelector(".about-section");
   const projectSection = document.querySelector(".project-section"); 
   const contactSection = document.querySelector(".contact-section");
 
