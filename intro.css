@@ -20,7 +20,7 @@
 }
 
 .intro-text {
-  padding: 5vw;  /* keep vw for responsiveness */
+  padding: 5vw;  
   display: flex;
   align-items: flex-start;
   flex-direction: column;

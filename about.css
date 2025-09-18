@@ -2,7 +2,7 @@
 
 .about{
     padding-bottom: 10vw;
-  
+  transition: background-color 1s ease;
   background-color: #cb2121;  
 }
 .quote{
@@ -110,8 +110,7 @@
     background-repeat: no-repeat;
     border-radius: 2rem;
     margin-right: 2vw;
-    
-
+  
 }
 
 .jersey {
@@ -140,6 +139,11 @@
     line-height: 30px;
     letter-spacing: 2.5px;
     color: #F2F2F2;
+}
+
+.logos h1{
+
+  font-size: 7vw;
 }
 
 
