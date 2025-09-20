@@ -1,0 +1,342 @@
+@media (max-width: 1024px) {
+  @keyframes shoot {
+  0%   { transform: translateX(0) translateY(0) rotate(220deg); opacity: 1; }
+  100% { transform: translateX(120vw) translateY(50vh) rotate(220deg); opacity: 0; }
+}
+.name {
+  -webkit-text-stroke: 0.2vw rgb(255, 255, 255);
+}
+  
+  .intro {
+    height: 100vh;        
+    width: 100%;
+  }
+  .intro-text {
+    display: flex;
+    margin-top: 20vw;
+
+  }
+
+  .propic {
+    
+    height: 70vw;
+    width: auto;
+
+  }
+  
+  .hi {
+  
+  font-size: 4.5rem;
+  line-height: 6rem; 
+  
+  }
+
+  .web {
+   
+    font-size: 1.4rem;
+    
+  }
+
+  .work {  
+    font-size: 1.2rem;
+    border-radius: .5rem; 
+    margin-top: 1.3rem;
+  }
+
+}
+
+@media (max-width: 1366px) {
+  @keyframes shoot {
+  0%   { transform: translateX(0) translateY(0) rotate(220deg); opacity: 1; }
+  100% { transform: translateX(120vw) translateY(50vh) rotate(220deg); opacity: 0; }
+}
+.name {
+  -webkit-text-stroke: 0.2vw rgb(255, 255, 255);
+}
+  
+  .intro {
+    height: 100vh;        
+    width: 100%;
+  }
+  .intro-text {
+    display: flex;
+    margin-top: 10vw;
+
+  }
+
+  .propic {
+    
+    height: 60vw;
+    width: auto;
+
+  }
+  
+  .hi {
+  
+  font-size: 6rem;
+  line-height: 6rem; 
+  
+  }
+
+  .web {
+    
+    margin-top: 1.3rem;
+   
+    font-size: 2rem;
+    
+  }
+
+  .work {  
+    font-size: 1.4  rem;
+    border-radius: .5rem; 
+    margin-top: 1.3rem;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+ 
+
+.quote{
+  
+  
+  text-align: center;
+  padding: 3vw;
+  font-size: 7rem; 
+  font-weight: 800;
+}
+
+.about-text{
+  padding-top: 20vh;
+}
+.about-text2{
+  line-height: 10vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.about-text3{
+  font-size: .6em;
+  padding-bottom: 20vh;
+}
+
+  .aboutme {
+    flex-direction: column;
+    text-align: center;
+
+  }
+.colorpic{
+  border-radius: 4vw;
+  margin-bottom: 2vw;
+
+  background-position: 50% 40%;
+  background-size: 115% auto;
+
+}
+.colorme{
+  height: 80vw;
+
+
+}
+.job{
+  flex-direction: row;
+  
+}
+.job1{
+width: 45vw;
+height: 45vw;
+border-radius: 4vw;
+margin-right: 2vw;
+
+  background-position: 230% 40%;
+  background-size: 115% auto;
+
+
+}
+.job2{
+width: 45vw;
+height: 45vw;
+border-radius: 4vw;
+
+  background-position: 89% 90%;
+  background-size: 70% auto;
+
+}
+
+.aboutmetext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  
+  padding-bottom: 10vh;
+  font-size: 1rem;
+  line-height: 2vw;
+}
+.aboutmetext p{
+  padding-bottom: 10vh;
+}
+
+.logos {
+  margin-top: 130vh;
+}
+
+
+}
+
+
+@media (max-width: 1366px) {
+ 
+
+.quote{
+  
+  
+  text-align: center;
+  padding: 3vw;
+  font-size: 7rem; 
+  font-weight: 800;
+}
+
+.about-text{
+  padding-top: 20vh;
+}
+.about-text2{
+  line-height: 10vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.about-text3{
+  font-size: .6em;
+  padding-bottom: 20vh;
+}
+
+  .aboutme {
+    flex-direction: column;
+    text-align: center;
+
+  }
+.colorpic{
+  border-radius: 4vw;
+  margin-bottom: 2vw;
+
+  background-position: 50% 40%;
+  background-size: 90% auto;
+
+}
+.colorme{
+  height: 80vw;
+
+
+}
+.job{
+  flex-direction: row;
+  
+}
+.job1{
+width: 45vw;
+height: 45vw;
+border-radius: 4vw;
+margin-right: 2vw;
+
+  background-position: 210% 40%;
+  background-size: 115% auto;
+
+
+}
+.job2{
+width: 45vw;
+height: 45vw;
+border-radius: 4vw;
+
+  background-position: 120% 30%;
+  background-size: 70% auto;
+
+}
+
+.aboutmetext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  
+  padding-bottom: 10vh;
+  font-size: 1.3rem;
+  line-height: 2vw;
+}
+.aboutmetext p{
+  padding-bottom: 10vh;
+}
+
+.logos {
+  margin-top: 200vh;
+}
+
+
+}
+
+
+
+@media (max-width: 1024px) {
+  .project-section {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textproject h1 {
+    font-size: 7vw;
+  }
+  .textproject h6 {
+    font-size: 2.1vw;
+    line-height: 1.4;
+    
+    padding-bottom: 5vw;
+  }
+  .projectcards {
+    
+    padding-right: 1vw ;
+    padding-left: 1vw ;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .card {
+    box-shadow: #ffffff;
+    max-width: 85vw;
+    
+    
+  }
+  .card img{
+    border-radius: 5vw;
+    height: 50vh;
+
+
+  }
+
+  .card-content h3{
+    font-size: 2rem;
+  }
+   .card-content p{
+    font-size: 1rem;
+  }
+   .tags{
+    font-size: .6rem;
+    padding-right: 1vw ;
+    padding-left: 1vw ;
+  }
+   .tag{
+    font-size: .6rem;
+  }
+  .button{
+    font-size: 1rem;
+
+
+  }
+
+
+
+
+
+}
