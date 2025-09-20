@@ -122,68 +122,25 @@ html {
     display: block;
     color: #fff;
   }
-.quote{
-  
-  
-  text-align: center;
-  padding: 5vw;
-  font-size: 5rem; 
-  font-weight: 800;
 }
 
-.about-text{
-  line-height: 10vh;
-  padding-top: 10vh;
-}
-.about-text2{
-  line-height: 10vh;
-  padding-top: 20vh;
-  padding-bottom: 10vh;
-}
-
-.about-text3{
-  font-size: .5em;
-  padding-bottom: 10vh;
-}
-
-
-
-
-
-
-
-
-
-  .aboutme {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 1024px) {
+  .navbar {
+    height: 5vh;
+    width: 5vw;
   }
-  .project-section {
-    text-align: center;
+  .navbar ul {
+    display: none;
+  }
+  .logo1 {
+    
     flex-direction: column;
     align-items: center;
+    
+    height: 2rem;
   }
-  .textproject h1 {
-    font-size: 6vw;
-  }
-  .textproject h6 {
-    font-size: 3.5vw;
-    line-height: 1.4;
-  }
-  .projectcards {
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  .card {
-    max-width: 22rem;
-  }
-  .contact-section {
-    flex-direction: column;
-  }
-  .contact-info {
-    flex-direction: column;
-    text-align: center;
+  .burger {
+    display: block;
+    color: #fff;
   }
 }

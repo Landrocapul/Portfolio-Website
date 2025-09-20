@@ -277,11 +277,6 @@ border-radius: 4vw;
   background-size: 70% auto;
 
 }
-
-
-
-
-
 .aboutmetext{
   display: flex;
   flex-direction: column;
@@ -302,3 +297,187 @@ border-radius: 4vw;
 
 
 }
+
+
+@media (max-width: 1024px) {
+ 
+
+.quote{
+  
+  
+  text-align: center;
+  padding: 3vw;
+  font-size: 7rem; 
+  font-weight: 800;
+}
+
+.about-text{
+  padding-top: 20vh;
+}
+.about-text2{
+  line-height: 10vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.about-text3{
+  font-size: .6em;
+  padding-bottom: 20vh;
+}
+
+  .aboutme {
+    flex-direction: column;
+    text-align: center;
+
+  }
+.colorpic{
+  border-radius: 4vw;
+  margin-bottom: 2vw;
+
+  background-position: 50% 40%;
+  background-size: 115% auto;
+
+}
+.colorme{
+  height: 80vw;
+
+
+}
+.job{
+  flex-direction: row;
+  
+}
+.job1{
+width: 45vw;
+height: 45vw;
+border-radius: 4vw;
+margin-right: 2vw;
+
+  background-position: 230% 40%;
+  background-size: 115% auto;
+
+
+}
+.job2{
+width: 45vw;
+height: 45vw;
+border-radius: 4vw;
+
+  background-position: 89% 90%;
+  background-size: 70% auto;
+
+}
+
+.aboutmetext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  
+  padding-bottom: 10vh;
+  font-size: 1rem;
+  line-height: 2vw;
+}
+.aboutmetext p{
+  padding-bottom: 10vh;
+}
+
+.logos {
+  margin-top: 130vh;
+}
+
+
+}
+
+
+@media (max-width: 1366px) {
+ 
+
+.quote{
+  
+  
+  text-align: center;
+  padding: 3vw;
+  font-size: 7rem; 
+  font-weight: 800;
+}
+
+.about-text{
+  padding-top: 20vh;
+}
+.about-text2{
+  line-height: 10vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.about-text3{
+  font-size: .6em;
+  padding-bottom: 20vh;
+}
+
+  .aboutme {
+    flex-direction: column;
+    text-align: center;
+
+  }
+.colorpic{
+  border-radius: 4vw;
+  margin-bottom: 2vw;
+
+  background-position: 50% 40%;
+  background-size: 90% auto;
+
+}
+.colorme{
+  height: 80vw;
+
+
+}
+.job{
+  flex-direction: row;
+  
+}
+.job1{
+width: 45vw;
+height: 45vw;
+border-radius: 4vw;
+margin-right: 2vw;
+
+  background-position: 210% 40%;
+  background-size: 115% auto;
+
+
+}
+.job2{
+width: 45vw;
+height: 45vw;
+border-radius: 4vw;
+
+  background-position: 120% 30%;
+  background-size: 70% auto;
+
+}
+
+.aboutmetext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  
+  padding-bottom: 10vh;
+  font-size: 1.3rem;
+  line-height: 2vw;
+}
+.aboutmetext p{
+  padding-bottom: 10vh;
+}
+
+.logos {
+  margin-top: 200vh;
+}
+
+
+}
+
+

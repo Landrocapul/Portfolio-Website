@@ -81,6 +81,7 @@ padding-bottom: 1vw;
 
 .card h3 {
   font-size: 2.5rem;
+  font-weight: 800;
 }
 .card p {
   color: #555;
@@ -111,6 +112,9 @@ padding-bottom: 1vw;
   text-decoration: none;
   font-size: 1.5rem;
   margin-top: 0.6rem;
+  text-align: center;
+  
+    margin-right: 40vw;
 }
 
 .button:hover {
@@ -179,3 +183,69 @@ padding-bottom: 1vw;
 
 
 }
+@media (max-width: 1024px) {
+  .project-section {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textproject h1 {
+    font-size: 7vw;
+  }
+  .textproject h6 {
+    font-size: 2.1vw;
+    line-height: 1.4;
+    
+    padding-bottom: 5vw;
+  }
+  .projectcards {
+    
+    padding-right: 1vw ;
+    padding-left: 1vw ;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .card {
+    box-shadow: #ffffff;
+    max-width: 85vw;
+    
+    
+  }
+  .card img{
+    border-radius: 5vw;
+    height: 50vh;
+
+
+  }
+
+  .card-content h3{
+    font-size: 2rem;
+  }
+   .card-content p{
+    font-size: 1rem;
+  }
+   .tags{
+    font-size: .6rem;
+    padding-right: 1vw ;
+    padding-left: 1vw ;
+  }
+   .tag{
+    font-size: .6rem;
+  }
+  .button{
+    font-size: 1rem;
+
+
+  }
+
+
+
+
+
+}
+
+
+
+
